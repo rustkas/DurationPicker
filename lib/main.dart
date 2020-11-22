@@ -53,7 +53,8 @@ class _MyHomePageState extends State<MyHomePage> {
               context: context,
               initialTime: Duration(minutes: 30),
             );
-            Scaffold.of(context).showSnackBar(
+            ScaffoldMessenger.of(context).showSnackBar(
+            //Scaffold.of(context).showSnackBar(
               SnackBar(
                 content: Text("Duration: $_durationResult"),
               ),
